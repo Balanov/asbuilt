@@ -1,8 +1,4 @@
-bin/
-dist/
 site/node_modules/
-site/dist/
-site/dist-paritet/
 *.test
 *.out
 __pycache__/
