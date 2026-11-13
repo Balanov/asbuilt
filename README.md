@@ -268,9 +268,13 @@ distinction between them is the whole point of the memory rules.
 
 ## Documentation
 
+- [balanov.pro/asbuilt](https://balanov.pro/asbuilt/) — the landing page, and
+  the source for it in [`site/`](site/).
 - [RESEARCH.md](RESEARCH.md) — the market research, the three candidates that
   were considered, and why this one was built.
 - [BENCHMARKS.md](BENCHMARKS.md) — measured size, runtime and coverage.
+- [bench/COMPETITORS.md](bench/COMPETITORS.md) — the same audit timed
+  against lshw, lscpu, lspci, dmidecode and pcicrawler.
 - [CHANGELOG.md](CHANGELOG.md) — what changed.
 - `asbuilt explain <rule-id>` — the rationale and the source for any rule.
 

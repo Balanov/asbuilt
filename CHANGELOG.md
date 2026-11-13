@@ -7,7 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
--
+### Added
+
+- Landing page source in `site/`: the balanov.pro page (a live instrument
+  panel) and the paritet.dev variant (a drawing sheet), built from one
+  source with two themes and shipped as a static bundle with no runtime
+  dependencies.
+- Benchmark harness in `bench/`: `measure.py` times asbuilt against lshw,
+  lscpu, lspci, dmidecode and pcicrawler on the same machine, and writes the
+  raw samples next to the report.
+
+### Fixed
+
+- Flags placed before the subcommand were ignored, so `asbuilt --root /srv
+  manifest` audited the machine instead of printing the manifest. The
+  subcommand is now extracted before the flags are parsed, and both orders
+  work.
 
 ## [0.1.0] - 2026-11-13
 

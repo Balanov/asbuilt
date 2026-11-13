@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="asbuilt">
+  <title>asbuilt</title>
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 7v4M32 7v4M42 7v4M22 53v4M32 53v4M42 53v4"/>
+    <path d="M7 22h4M7 32h4M7 42h4M53 22h4M53 32h4M53 42h4"/>
+    <rect x="11" y="11" width="42" height="42" rx="7"/>
+    <path d="M19 22h26M19 32h26"/>
+    <path d="M19 42h26" stroke-dasharray="6 5"/>
+  </g>
+</svg>

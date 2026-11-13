@@ -1,0 +1,289 @@
+{
+  "measured_on": {
+    "host": "WSL2 Ubuntu 24.04.5 (WSL distro UbuntuASB), x86_64",
+    "kernel": "6.18.58.1-microsoft-standard-WSL2",
+    "cpus": 32,
+    "date": "2026-11-13"
+  },
+  "method": {
+    "timing": "Python 3.12 time.perf_counter() around subprocess.run(); stdout+stderr to DEVNULL so the pipe is not measured",
+    "runs": 20,
+    "warmup_runs_discarded": 2,
+    "harness": "bench/measure.py (raw per-run samples in bench/raw_measurements.json)",
+    "binary_location": "native Linux fs: /tmp/asbuilt (NOT the /mnt/f Windows-backed mount, which would measure the mount)",
+    "fixture": "/tmp/server = copy of tests/fixtures/server (dual-socket R760, 112 logical CPUs, 8 memory channels, 1 degraded PCIe link)",
+    "fixture_caveat": "The 112-logical-CPU / dual-socket description belongs to the FIXTURE. The measured host is a 32-logical-CPU AMD Ryzen 9 5950X desktop; live-audit numbers come from the real host, fixture numbers from the fixture.",
+    "install_size_basis": "apt: dpkg Installed-Size x 1024; asbuilt: stat size of the binary; pcicrawler: byte size of its own files in an isolated pip --target dir (excludes click/six); perfspect: size of the released perfspect.tgz asset",
+    "output_size_basis": "stdout byte count of a single invocation",
+    "sourced_date": "Every upstream URL below was re-fetched and checked on 2026-11-13"
+  },
+  "tool": {
+    "asbuilt": {
+      "runtime_us_mean": 3158.3,
+      "runtime_us_min": 2716.4,
+      "runtime_us_max": 3706.4,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3510432,
+      "output_bytes": 4868,
+      "notes": "asbuilt --root /tmp/server check = manifest + 33 rules + text report in one process; 2 critical / 3 warn / 2 info findings incl. pcie.link.degraded (-50.0% pcie_bandwidth) and mem.speed.below_module_rating (-14.3% memory_bandwidth); byte-identical output when run as user nobody (rc=0)",
+      "source": "measured locally",
+      "license": "MIT",
+      "license_source": "local file F:\\GitHub\\asbuilt\\LICENSE (MIT, Copyright (c) 2026 Anton Balanov)"
+    },
+    "asbuilt-manifest": {
+      "runtime_us_mean": 3289.6,
+      "runtime_us_min": 2944.8,
+      "runtime_us_max": 3992.5,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3510432,
+      "output_bytes": 11299,
+      "notes": "asbuilt --root /tmp/server manifest = the canonical JSON manifest (11 KB); the --json flag is accepted before or after the subcommand",
+      "source": "measured locally"
+    },
+    "asbuilt-manifest-json": {
+      "runtime_us_mean": 3379.5,
+      "runtime_us_min": 2852.2,
+      "runtime_us_max": 4162.7,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3510432,
+      "output_bytes": 11299,
+      "notes": "Real JSON manifest: 'asbuilt --json --root /tmp/server manifest' (--json MUST precede the subcommand); 16894 B of schema-1 JSON with host/platform/cpu/memory/numa/pcie/os/power/virtualization sections",
+      "source": "measured locally"
+    },
+    "asbuilt-version": {
+      "runtime_us_mean": 1752.9,
+      "runtime_us_min": 1534.7,
+      "runtime_us_max": 2147.8,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3510432,
+      "output_bytes": 14,
+      "notes": "Process startup floor for the statically-linked Go binary ('asbuilt 0.1.0', 14 B); full audit costs ~1.4 ms on top of this floor",
+      "source": "measured locally"
+    },
+    "asbuilt-check-live": {
+      "runtime_us_mean": 4485.0,
+      "runtime_us_min": 3961.2,
+      "runtime_us_max": 5342.8,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3510432,
+      "output_bytes": 2167,
+      "notes": "Live audit of the real WSL2 machine (no --root); slower than the fixture run because it probes live sysfs/procfs rather than the fixture tree",
+      "source": "measured locally"
+    },
+    "lshw": {
+      "runtime_us_mean": 136685.5,
+      "runtime_us_min": 132505.7,
+      "runtime_us_max": 151208.4,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 997376,
+      "output_bytes": 13638,
+      "notes": "'lshw -json': 74x slower than the asbuilt full audit; emits an inventory tree only - no rules, no verdicts; without root it prints 'WARNING: you should run this program as super-user' and the data is incomplete",
+      "source": "measured locally",
+      "license": "GPL-2+",
+      "license_source": "https://github.com/hardware-probe/lshw ; local /usr/share/doc/lshw/copyright ('GNU General Public License ... either version 2, or (at your option) any later version')"
+    },
+    "lshw-short": {
+      "runtime_us_mean": 140726.4,
+      "runtime_us_min": 133229.2,
+      "runtime_us_max": 155125.8,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 997376,
+      "output_bytes": 853,
+      "notes": "'lshw -short': essentially the same cost as lshw -json (the probing dominates, not the formatting); output is a fixed-width tree of devices",
+      "source": "measured locally"
+    },
+    "dmidecode": {
+      "runtime_us_mean": 685.7,
+      "runtime_us_min": 590.8,
+      "runtime_us_max": 820.4,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 233472,
+      "output_bytes": 97,
+      "notes": "Timing is NOT comparable: this WSL kernel exposes no SMBIOS/DMI table, so dmidecode exits 0 after 'No SMBIOS nor DMI entry point found, sorry.' (97 B). Needs /dev/mem (crw------- root root); as user nobody it fails rc=1 with \"Can't read memory from /dev/mem\"",
+      "source": "measured locally",
+      "license": "GPL-2+",
+      "license_source": "https://github.com/nmhughes/dmidecode ; local /usr/share/doc/dmidecode/copyright ('License: GPL-2+')"
+    },
+    "dmidecode-t17": {
+      "runtime_us_mean": 675.8,
+      "runtime_us_min": 600.2,
+      "runtime_us_max": 893.1,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 233472,
+      "output_bytes": 97,
+      "notes": "DIMM-record mode (type 17); same caveat as dmidecode - this kernel has no DMI table, so 97 B of 'not found' output; on real hardware type 17 is the only way to get per-DIMM part number / size / speed / slot locator",
+      "source": "measured locally"
+    },
+    "lscpu": {
+      "runtime_us_mean": 8241.2,
+      "runtime_us_min": 7855.4,
+      "runtime_us_max": 8622.9,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 3521536,
+      "output_bytes": 4581,
+      "notes": "'lscpu -J' (util-linux): CPU topology only - 0 matches for dimm/slot/module in its JSON, so it cannot see DIMM population; 2.5x slower than the asbuilt full audit",
+      "source": "measured locally",
+      "license": "GPL-2+",
+      "license_source": "https://www.kernel.org/pub/linux/utils/util-linux/ ; local /usr/share/doc/util-linux/copyright ('License: GPL-2+')"
+    },
+    "lspci": {
+      "runtime_us_mean": 12632.4,
+      "runtime_us_min": 11810.6,
+      "runtime_us_max": 15994.4,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 186368,
+      "output_bytes": 3102,
+      "notes": "'lspci -vvv' (pciutils 3.10.0): extended config space needs root - as user nobody the capabilities block degrades to 'Capabilities: <access denied>'; this WSL host has only 3 virtio devices and no PCIe link status",
+      "source": "measured locally",
+      "license": "GPL-2+",
+      "license_source": "https://gitlab.com/pciutils/pciutils ; local /usr/share/doc/pciutils/copyright ('License: GPL-2+')"
+    },
+    "setpci": {
+      "runtime_us_mean": 859.5,
+      "runtime_us_min": 711.7,
+      "runtime_us_max": 1282.5,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 186368,
+      "output_bytes": 0,
+      "notes": "PCIe link status NOT measurable here: 'setpci -s 1b77:00:00.0 LnkSta' exits rc=1 with 'Unknown register \"LnkSta\"' (pciutils 3.10.0 exposes ECAP_<capability>, not per-link registers) and /sys/bus/pci/devices/*/current_link_speed does not exist on this WSL kernel; no real PCIe endpoint present",
+      "source": "measured locally"
+    },
+    "perfspect": {
+      "runtime_us_mean": null,
+      "runtime_us_min": null,
+      "runtime_us_max": null,
+      "runs": 0,
+      "needs_root": true,
+      "install_size_bytes": 45663339,
+      "output_bytes": null,
+      "notes": "Not runnable here: needs an Intel Xeon with PMU/perfmon access, which this WSL2 host (AMD Ryzen 9) does not provide. install_size_bytes = size of the released perfspect.tgz asset for v3.18.0 (published 2026-11-06). 'report' has no --noroot flag (only 'metrics' does); it emits 33 configuration categories (bios, os, cpu, prefetcher, isa, accelerator, power, cstates, frequency, sst, uncore, elc, memory, dimm, netconfig, nic, disk, filesystem, gpu, gaudi, cxl, pcie, cve, process, sensor, chassisstatus, pmu, sel, kernellog) in html/xlsx/json/txt",
+      "source": "https://github.com/intel/PerfSpect/releases/tag/v3.18.0",
+      "license": "BSD-3-Clause",
+      "license_source": "https://github.com/intel/PerfSpect/blob/main/LICENSE"
+    },
+    "pcicrawler": {
+      "runtime_us_mean": 50852.3,
+      "runtime_us_min": 46530.8,
+      "runtime_us_max": 64534.0,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 109365,
+      "output_bytes": 483,
+      "notes": "'pcicrawler -j' (MIT, Python3+click+six, PyPI pcicrawler 1.0.0): 19x slower than the asbuilt full audit; README states 'Must run as root as it uses privileged sysfs entries'; emits per-device capable_speed/cur_speed/target_speed + widths, AER and VPD, but NO pass/fail verdict. install_size_bytes = its own files only; with click+six the isolated install totals 1148314 B",
+      "source": "https://github.com/opencomputeproject/ocp-diag-pcicrawler",
+      "license": "MIT",
+      "license_source": "https://github.com/opencomputeproject/ocp-diag-pcicrawler/blob/main/LICENSE"
+    },
+    "pcicrawler-tree": {
+      "runtime_us_mean": 47706.3,
+      "runtime_us_min": 44812.0,
+      "runtime_us_max": 51197.4,
+      "runs": 20,
+      "needs_root": true,
+      "install_size_bytes": 109365,
+      "output_bytes": 153,
+      "notes": "'pcicrawler -t' tree view: stdout here is only the 153 B 'you may be writing a script...' warning - no device tree, because this WSL host exposes 3 virtio devices and no PCIe endpoints",
+      "source": "https://github.com/opencomputeproject/ocp-diag-pcicrawler"
+    },
+    "sat-hwmatch": {
+      "runtime_us_mean": null,
+      "runtime_us_min": null,
+      "runtime_us_max": null,
+      "runs": 0,
+      "needs_root": true,
+      "install_size_bytes": null,
+      "output_bytes": null,
+      "notes": "Not installable/runnable here: 'sat' runs in a Podman container on HPE Cray EX Kubernetes manager nodes and queries CSM's Hardware State Manager, so it needs the whole HPE Cray EX (Shasta) stack plus API-gateway auth. Scope is CPU/memory ONLY: 'Processor values that must match are model, core count, and speed. Memory module values that must match are memory type, memory device type, and size. The number of memory modules must also match. The memory manufacturer must match for just the node level' - matched at slot/card/node level",
+      "source": "https://cray-hpe.github.io/docs-sat/en-25/introduction/",
+      "license": "MIT (sat CLI source; the SAT product itself is HPE-proprietary)",
+      "license_source": "https://github.com/Cray-HPE/sat/blob/main/LICENSE ; https://github.com/Cray-HPE/sat/blob/main/docs/man/sat-hwmatch.8.rst"
+    },
+    "python3-startup": {
+      "runtime_us_mean": 8982.4,
+      "runtime_us_min": 8288.0,
+      "runtime_us_max": 10511.7,
+      "runs": 20,
+      "needs_root": false,
+      "install_size_bytes": 82944,
+      "output_bytes": 0,
+      "notes": "'python3 -c pass' interpreter startup floor: 2.6x the whole asbuilt audit, and 2.5x the asbuilt JSON manifest - any Python-based competitor pays this before doing any work",
+      "source": "measured locally",
+      "license": "Python-2.0 (CPython runtime)",
+      "license_source": "https://www.python.org/"
+    }
+  },
+  "verdict_rows": [
+    {
+      "capability": "Whole-machine audit in a single invocation",
+      "asbuilt": "3.08 ms: manifest + 33 rules + text report + verdicts in one process (3076 us mean)",
+      "competitor": "lshw -json 227.4 ms (74x slower, inventory tree only, no rules); pcicrawler -j 57.5 ms (PCI only); lscpu -J 7.8 ms (CPU only)",
+      "source": "measured locally (bench/raw_measurements.json)"
+    },
+    {
+      "capability": "DIMM population: slot fill, per-module part number, rated vs configured speed",
+      "asbuilt": "16 DIMMs over 8 channels, per-module rated speed, 'mem.parts.mixed_within_channel' and 'mem.speed.below_module_rating' rules",
+      "competitor": "lscpu: impossible - 0 dimm/slot/module keys in lscpu -J. dmidecode -t 17: the only equivalent, but this kernel has no DMI table (97 B 'not found'); lshw reports only aggregate 'System memory'",
+      "source": "measured locally"
+    },
+    {
+      "capability": "PCIe link degradation verdict (negotiated speed vs endpoint capability)",
+      "asbuilt": "pcie.link.degraded CRITICAL: 0000:01:00.0 negotiated 16.0 GT/s x16 vs 32.0 GT/s x16 endpoint capability, impact: pcie_bandwidth -50.0% (31.5 of 63.0 GB/s), with evidence + remedy",
+      "competitor": "lspci/setpci: no verdict, and NOT measurable here - setpci 3.10.0 has no 'LnkSta' register (ECAP_<capability> only) and /sys/bus/pci/devices/*/current_link_speed does not exist on this WSL kernel. pcicrawler: exposes capable_speed/cur_speed/target_speed + widths + AER, but no pass/fail judgement",
+      "source": "measured locally; https://github.com/opencomputeproject/ocp-diag-pcicrawler"
+    },
+    {
+      "capability": "Expected-profile diff (compare this machine against a known-good profile)",
+      "asbuilt": "'asbuilt diff A.json B.json' plus '--profile FILE' with profile.* rules (profile.memory.ecc, profile.pcie.min_link, profile.platform.mismatch, ...)",
+      "competitor": "PerfSpect has no compare/expected-profile command: its documented commands are report, benchmark, metrics, telemetry, flamegraph, lock, config, update, extract, and the global flags are --debug/--log-stdout/--noupdate/--output/--syslog/--tempdir only",
+      "source": "https://github.com/intel/PerfSpect/blob/main/docs/perfspect.md ; https://github.com/intel/PerfSpect/blob/main/docs/perfspect_report.md"
+    },
+    {
+      "capability": "Semantic performance-loss verdicts (not just raw numbers)",
+      "asbuilt": "quantified impact lines, e.g. 'impact: pcie_bandwidth -50.0% (31.5 of 63.0 GB/s)' and 'impact: memory_bandwidth -14.3% (307.2 of 358.4 GB/s)'",
+      "competitor": "PerfSpect reports raw/threshold-flagged values only: v3.10.0 notes the metrics HTML report 'highlights metrics that exceed a threshold, and provides context and/or a tip'; the benchmark command emits measured speed/power/temperature numbers, not loss verdicts",
+      "source": "https://github.com/intel/PerfSpect/releases/tag/v3.10.0 ; https://github.com/intel/PerfSpect/blob/main/docs/perfspect_benchmark.md"
+    },
+    {
+      "capability": "CPU/memory uniformity across sockets, cards and slots",
+      "asbuilt": "mem.population.uneven, mem.parts.mixed_within_channel, mem.speed.mixed_within_channel, numa.asymmetric, numa.single_node_multi_socket - evaluated on any Linux server",
+      "competitor": "sat hwmatch is the closest analogue but is Cray-only and CPU/memory-only: 'Processor values that must match are model, core count, and speed. Memory module values that must match are memory type, memory device type, and size. The number of memory modules must also match.' at slot/card/node level, requiring an HPE Cray EX (Shasta) system + CSM Hardware State Manager + API-gateway auth",
+      "source": "https://cray-hpe.github.io/docs-sat/en-25/introduction/ ; https://github.com/Cray-HPE/sat/blob/main/docs/man/sat-hwmatch.8.rst"
+    },
+    {
+      "capability": "Root requirement for a complete answer",
+      "asbuilt": "false - verified identical 4868 B output and rc=0 as user 'nobody' (both fixture and live audit)",
+      "competitor": "lshw: warns 'WARNING: you should run this program as super-user' and output is incomplete; dmidecode: needs /dev/mem, rc=1 without root; lspci: 'Capabilities: <access denied>' without root; pcicrawler: 'Must run as root as it uses privileged sysfs entries'; PerfSpect report: no --noroot flag (only metrics has one); sat hwmatch: run as root/crayadm on a K8s manager node",
+      "source": "measured locally; https://github.com/opencomputeproject/ocp-diag-pcicrawler ; https://github.com/intel/PerfSpect"
+    },
+    {
+      "capability": "Configuration breadth in one report",
+      "asbuilt": "33 rules over CPU, memory, NUMA, PCIe, OS/power/virtualization, plus a canonical JSON manifest (schema 1)",
+      "competitor": "PerfSpect report is far broader: 33 configuration categories including bios, os, software, cpu, prefetcher, isa, accelerator, power, cstates, frequency, sst, uncore, elc, memory, dimm, netconfig, nic, disk, filesystem, gpu, gaudi, cxl, pcie, cve, process, sensor, chassisstatus, pmu, sel, kernellog - but it reports configuration, it does not judge it",
+      "source": "https://github.com/intel/PerfSpect/blob/main/docs/perfspect_report.md"
+    },
+    {
+      "capability": "PCIe topology with speed/width per link",
+      "asbuilt": "PCIE section of the report: per-function negotiated vs capability speed/width, AER error state, degraded-link finding",
+      "competitor": "pcicrawler -t/-j: dedicated topology tree with capable_speed/cur_speed/target_speed, cur_width/capable_width, AER (--aer) and VPD (--vpd), filterable by class/device/address - the best open-source PCIe specialist here, but still no verdict layer",
+      "source": "https://github.com/opencomputeproject/ocp-diag-pcicrawler"
+    },
+    {
+      "capability": "License (redistribution cost)",
+      "asbuilt": "MIT",
+      "competitor": "lshw GPL-2+; dmidecode GPL-2+; pciutils GPL-2+; util-linux/lscpu GPL-2+; Intel PerfSpect BSD-3-Clause; OCP pcicrawler MIT; Cray SAT CLI MIT (SAT product itself HPE-proprietary)",
+      "source": "https://github.com/intel/PerfSpect/blob/main/LICENSE ; https://github.com/opencomputeproject/ocp-diag-pcicrawler/blob/main/LICENSE ; https://github.com/Cray-HPE/sat/blob/main/LICENSE ; local /usr/share/doc/{lshw,dmidecode,pciutils,util-linux}/copyright"
+    }
+  ]
+}

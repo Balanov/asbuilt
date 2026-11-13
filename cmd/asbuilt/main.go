@@ -43,6 +43,51 @@ func main() {
 	os.Exit(run(os.Args[1:]))
 }
 
+// flagsWithValue are the flags that consume the argument after them.
+var flagsWithValue = map[string]bool{
+	"profile": true,
+	"root":    true,
+	"fail-on": true,
+}
+
+// splitCommand pulls the subcommand out of an argument list that may hold
+// flags before it, after it, or on both sides.
+//
+// The standard flag package stops at the first non-flag argument, which
+// would turn `asbuilt --root /srv manifest` into a plain check. The command
+// is therefore extracted first, and the flag values it swallows are taken
+// with it.
+func splitCommand(args []string) (command string, rest []string) {
+	command = "check"
+	found := false
+	rest = make([]string, 0, len(args))
+
+	for i := 0; i < len(args); i++ {
+		arg := args[i]
+		if !strings.HasPrefix(arg, "-") || arg == "-" {
+			if !found {
+				command = arg
+				found = true
+				continue
+			}
+			rest = append(rest, arg)
+			continue
+		}
+
+		rest = append(rest, arg)
+		name := strings.TrimLeft(arg, "-")
+		if index := strings.Index(name, "="); index >= 0 {
+			continue
+		}
+		if flagsWithValue[name] && i+1 < len(args) {
+			rest = append(rest, args[i+1])
+			i++
+		}
+	}
+
+	return command, rest
+}
+
 func run(args []string) int {
 	if len(args) > 0 {
 		switch args[0] {
@@ -55,11 +100,7 @@ func run(args []string) int {
 		}
 	}
 
-	command := "check"
-	if len(args) > 0 && !strings.HasPrefix(args[0], "-") {
-		command = args[0]
-		args = args[1:]
-	}
+	command, args := splitCommand(args)
 
 	switch command {
 	case "-h", "--help", "help":

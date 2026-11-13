@@ -31,24 +31,48 @@ manager involved. The repository has no third-party Go dependencies at all:
 
 ## Runtime
 
-200 consecutive runs per row, wall clock, on the fixture tree in
-`tests/fixtures/server`. That fixture describes a dual-socket server with 112
-logical CPUs, eight memory channels and sixteen modules, two PCIe functions, and
-a firmware table, so the work per run is the same order as a real audit.
+The harness is `bench/measure.py` in the repository: 20 timed runs after two
+discarded warm-ups, wall clock around `subprocess.run`, stdout and stderr
+sent to `DEVNULL`. The audited machine is the fixture in
+`tests/fixtures/server`, which describes a dual-socket server with 112
+logical CPUs, eight memory channels, sixteen modules and one degraded PCIe
+link, so the work per run is the same order as a real audit.
 
-| Operation | Per run |
-|---|---|
-| Full audit: manifest, 33 rules, text report | 2,957 µs |
-| Manifest only, JSON | 2,763 µs |
-| Full audit, JSON output | 2,810 µs |
-| `--version` (process startup floor) | 1,604 µs |
-| Live audit of the running machine | 4,155 µs |
+| Operation | Mean | Min | Max |
+|---|---:|---:|---:|
+| Full audit: manifest, 33 rules, text report | 3,158 µs | 2,716 µs | 3,706 µs |
+| Canonical JSON manifest | 3,290 µs | 2,945 µs | 3,993 µs |
+| JSON manifest with `--json` | 3,380 µs | 2,852 µs | 4,163 µs |
+| `--version` (process startup floor) | 1,753 µs | 1,535 µs | 2,148 µs |
+| Live audit of the running machine | 4,485 µs | 3,961 µs | 5,343 µs |
 
-The interesting number is the last pair. The floor of about 1.6 ms is what
+The interesting number is the last pair. The floor of about 1.75 ms is what
 fork, exec and the Go runtime cost before asbuilt does anything; a full audit
 of a 112-thread server with a firmware table adds roughly 1.4 ms of actual
 work. On a real bare-metal server the startup floor is lower, because the
 kernel does not have to cross a Windows host boundary.
+
+## Against the other tools
+
+Same harness, same machine, same commands. The full dataset, including the
+caveats, is in [bench/COMPETITORS.md](bench/COMPETITORS.md).
+
+| Tool | Command | Mean | Root | Verdict |
+|---|---|---:|:---:|---|
+| **asbuilt** | `--root … check` | **3,158 µs** | no | full audit, 33 rules |
+| lshw | `-json` | 136,686 µs | yes | tree output only |
+| pcicrawler | `-j` | 50,852 µs | yes | PCIe only |
+| lspci | `-vvv` | 12,632 µs | yes | two numbers compared |
+| lscpu | `-J` | 8,241 µs | no | CPU only |
+| dmidecode | — | 686 µs* | yes | SMBIOS dump, no verdict |
+
+\* `dmidecode`'s 0.69 ms is **not** a real DMI dump: this WSL kernel exposes
+no SMBIOS table, so the tool prints "No SMBIOS nor DMI entry point found" and
+exits 0. Its timing measures failing to find a table, not reading one.
+
+That makes asbuilt **43x faster than lshw** for a complete machine audit, and
+the only tool in the set that produces a verdict at all: the others collect
+facts, and asbuilt is the one that decides what they mean.
 
 ## Reproducing
 
@@ -56,7 +80,8 @@ kernel does not have to cross a Windows host boundary.
 go build -trimpath -ldflags "-s -w" -o asbuilt ./cmd/asbuilt
 ls -l asbuilt
 
-for i in $(seq 1 200); do ./asbuilt --root tests/fixtures/server check > /dev/null; done
+# the harness, on a Linux host
+python3 bench/measure.py
 ```
 
 ## Coverage of the fixture
@@ -70,13 +95,13 @@ go run ./tools/fixturegen -out tests/fixtures/server
 
 It reproduces the sources asbuilt reads: `/proc/cpuinfo`, `/proc/meminfo`,
 `/proc/version`, `/proc/uptime`, `/proc/cmdline`, the cpufreq and cache trees
-under `/sys/devices/system/cpu`, the NUMA nodes, the thermal throttle counters,
-the PCIe devices with their link attributes and AER counters, and a SMBIOS
-table describing a Dell PowerEdge R760 with eight DDR5 channels.
+under `/sys/devices/system/cpu`, the NUMA nodes, the thermal throttle
+counters, the PCIe devices with their link attributes and AER counters, and a
+SMBIOS table describing a Dell PowerEdge R760 with eight DDR5 channels.
 
 Because the fixture is a directory tree, it also proves that asbuilt can audit
-a machine it does not own: `--root` points every read at a different tree, which
-is how the same code path serves a container image, a chroot and a test.
+a machine it does not own: `--root` points every read at a different tree,
+which is how the same code path serves a container image, a chroot and a test.
 
 ## What the fixture demonstrates
 

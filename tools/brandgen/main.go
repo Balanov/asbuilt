@@ -41,34 +41,39 @@ func main() {
 	}
 }
 
-// drawMark renders the mark: a die outline with four traces, the last of
-// which is dashed the way an as-built drawing annotates a deviation from
-// the design intent.
+// drawMark renders the mark: a QFP package whose die carries two solid
+// traces and one dashed one. The dashed trace is the as-built convention:
+// a line that says what the machine actually is, where the solid ones say
+// what it was supposed to be.
 func drawMark(size int) *image.RGBA {
 	const units = 64.0
 	scale := float64(size) / units
 	img := image.NewRGBA(image.Rect(0, 0, size, size))
 
 	ink := color.RGBA{0x10, 0x14, 0x1c, 0xff}
-	width := int(math.Round(3.5 * scale))
+	width := int(math.Round(3 * scale))
 	if width < 1 {
 		width = 1
 	}
 
-	// Die outline, rounded corners approximated by quarter circles.
-	drawRoundedRect(img, int(7*scale), int(7*scale), int(57*scale), int(57*scale), int(9*scale), ink, width)
-
-	// Three solid traces.
-	for _, y := range []int{20, 29, 38} {
-		drawLine(img, int(18*scale), int(float64(y)*scale), int(46*scale), int(float64(y)*scale), ink, width)
+	// Package pins.
+	for _, offset := range []float64{22, 32, 42} {
+		drawLine(img, int(offset*scale), int(7*scale), int(offset*scale), int(11*scale), ink, width)
+		drawLine(img, int(offset*scale), int(53*scale), int(offset*scale), int(57*scale), ink, width)
+		drawLine(img, int(7*scale), int(offset*scale), int(11*scale), int(offset*scale), ink, width)
+		drawLine(img, int(53*scale), int(offset*scale), int(57*scale), int(offset*scale), ink, width)
 	}
 
-	// The fourth trace is dashed.
-	y := 47 * scale
-	for x := 18.0; x < 46; {
-		x2 := math.Min(x+7, 46)
-		drawLine(img, int(x*scale), int(y), int(x2*scale), int(y), ink, width)
-		x += 13
+	// The die.
+	drawRoundedRect(img, int(11*scale), int(11*scale), int(53*scale), int(53*scale), int(7*scale), ink, width)
+
+	// Two nominal traces and one as-built trace.
+	drawLine(img, int(19*scale), int(22*scale), int(45*scale), int(22*scale), ink, width)
+	drawLine(img, int(19*scale), int(32*scale), int(45*scale), int(32*scale), ink, width)
+	for x := 19.0; x < 45; {
+		x2 := math.Min(x+6, 45)
+		drawLine(img, int(x*scale), int(42*scale), int(x2*scale), int(42*scale), ink, width)
+		x += 11
 	}
 
 	return img
