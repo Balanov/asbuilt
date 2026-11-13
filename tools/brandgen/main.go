@@ -70,11 +70,15 @@ func drawMark(size int) *image.RGBA {
 	// Two nominal traces and one as-built trace.
 	drawLine(img, int(19*scale), int(22*scale), int(45*scale), int(22*scale), ink, width)
 	drawLine(img, int(19*scale), int(32*scale), int(45*scale), int(32*scale), ink, width)
-	for x := 19.0; x < 45; {
-		x2 := math.Min(x+6, 45)
+	for x := 19.0; x < 40; {
+		x2 := math.Min(x+6, 40)
 		drawLine(img, int(x*scale), int(42*scale), int(x2*scale), int(42*scale), ink, width)
 		x += 11
 	}
+
+	// The accent square at the end of the as-built trace.
+	accent := color.RGBA{0xe8, 0x55, 0x1f, 0xff}
+	drawRect(img, int(40*scale), int(37*scale), int(9*scale), int(9*scale), accent)
 
 	return img
 }
