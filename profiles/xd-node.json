@@ -1,0 +1,29 @@
+{
+  "name": "xd-node",
+  "expect": {
+    "platform": {
+      "product": "PowerEdge R760"
+    },
+    "cpu": {
+      "sockets": 2,
+      "threads_per_core": 2,
+      "turbo_enabled": true
+    },
+    "memory": {
+      "channels": 8,
+      "dimms_per_channel": 2,
+      "slots_filled": 16,
+      "configured_mts": 5600,
+      "ecc_enabled": true
+    },
+    "pcie": {
+      "min_link_gts": 32,
+      "min_link_width": 16
+    },
+    "os": {
+      "transparent_hugepage": "madvise",
+      "governor": "performance",
+      "numa_balancing": "0"
+    }
+  }
+}

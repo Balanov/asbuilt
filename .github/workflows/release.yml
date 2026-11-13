@@ -1,0 +1,185 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, with or without the leading v (e.g. 0.1.0)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: build ${{ matrix.target }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - linux-amd64
+          - linux-arm64
+          - darwin-amd64
+          - darwin-arm64
+          - windows-amd64
+        include:
+          - target: linux-amd64
+            goos: linux
+            goarch: amd64
+            ext: ""
+          - target: linux-arm64
+            goos: linux
+            goarch: arm64
+            ext: ""
+          - target: darwin-amd64
+            goos: darwin
+            goarch: amd64
+            ext: ""
+          - target: darwin-arm64
+            goos: darwin
+            goarch: arm64
+            ext: ""
+          - target: windows-amd64
+            goos: windows
+            goarch: amd64
+            # go build -o does not append .exe on its own.
+            ext: ".exe"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache: true
+          cache-dependency-path: go.mod
+
+      - name: Resolve version
+        id: version
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            version="$INPUT_VERSION"
+          else
+            version="${GITHUB_REF_NAME#v}"
+          fi
+          version="${version#v}"
+          if [ -z "$version" ]; then
+            echo "::error::could not resolve the release version"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Build ${{ matrix.target }}
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          CGO_ENABLED: "0"
+          VERSION: ${{ steps.version.outputs.version }}
+          TARGET: ${{ matrix.target }}
+          EXT: ${{ matrix.ext }}
+        run: go build -trimpath -ldflags "-s -w" -o "asbuilt-${VERSION}-${TARGET}${EXT}" ./cmd/asbuilt
+
+      - name: Upload ${{ matrix.target }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: asbuilt-${{ matrix.target }}
+          path: asbuilt-${{ matrix.target }}${{ matrix.ext }}
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: publish release
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache: true
+          cache-dependency-path: go.mod
+
+      - name: Resolve version
+        id: version
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            version="$INPUT_VERSION"
+          else
+            version="${GITHUB_REF_NAME#v}"
+          fi
+          version="${version#v}"
+          if [ -z "$version" ]; then
+            echo "::error::could not resolve the release version"
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Download binaries
+        uses: actions/download-artifact@v4
+        with:
+          pattern: asbuilt-*
+          path: dist
+          merge-multiple: true
+
+      - name: Checksums
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum asbuilt-* > checksums.txt
+          cat checksums.txt
+
+      - name: Publish the release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: asbuilt ${{ steps.version.outputs.version }}
+          body: |
+            asbuilt ${{ steps.version.outputs.version }} - the as-built truth of a server.
+
+            It collects what the machine actually is, judges it against the rules that
+            matter for data centre hardware, and prints the result as text or JSON.
+
+            ### Install
+
+            ```sh
+            curl -fsSL https://raw.githubusercontent.com/Balanov/asbuilt/${{ steps.version.outputs.tag }}/install.sh | sh
+            ```
+
+            On Windows:
+
+            ```powershell
+            irm https://raw.githubusercontent.com/Balanov/asbuilt/${{ steps.version.outputs.tag }}/install.ps1 | iex
+            ```
+
+            ### Assets
+
+            | File | Platform |
+            | --- | --- |
+            | `asbuilt-${{ steps.version.outputs.version }}-linux-amd64` | Linux x86-64 |
+            | `asbuilt-${{ steps.version.outputs.version }}-linux-arm64` | Linux arm64 |
+            | `asbuilt-${{ steps.version.outputs.version }}-darwin-amd64` | macOS x86-64 |
+            | `asbuilt-${{ steps.version.outputs.version }}-darwin-arm64` | macOS arm64 |
+            | `asbuilt-${{ steps.version.outputs.version }}-windows-amd64.exe` | Windows x86-64 |
+
+            `checksums.txt` holds the SHA-256 of every binary above.
+          files: |
+            dist/asbuilt-*
+            dist/checksums.txt
+          fail_on_unmatched_files: true

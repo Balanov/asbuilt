@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "asbuilt: the as-built truth of a server"
+message: "If you use asbuilt in your research, please cite it as below."
+authors:
+  - family-names: "Balanov"
+    given-names: "Anton"
+repository-code: "https://github.com/Balanov/asbuilt"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-13
+keywords:
+  - server
+  - hardware
+  - smbios
+  - pcie
+  - memory
+  - audit
+  - infrastructure

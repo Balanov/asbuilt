@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: test (${{ matrix.os }}, go ${{ matrix.go }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        go: ["1.26", "1.27"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
+          cache: true
+          # The module has no third-party dependencies and therefore no
+          # go.sum; go.mod is the dependency manifest to key the cache on.
+          cache-dependency-path: go.mod
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test ./...
+
+      - name: Build
+        run: go build -o asbuilt ./cmd/asbuilt
+
+  linux-smoke:
+    name: linux smoke
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache: true
+          cache-dependency-path: go.mod
+
+      - name: Build
+        run: go build -ldflags "-s -w" -o asbuilt ./cmd/asbuilt
+
+      - name: Smoke test the binary
+        # Every step here must work on a runner without root: the collectors
+        # only read what the kernel exposes unprivileged, and no finding about
+        # unreadable SMBIOS is asserted.
+        run: |
+          ./asbuilt --version
+          ./asbuilt rules | head -20
+          ./asbuilt check --json | head -40
+
+      - name: Show binary size
+        run: ls -l asbuilt
+
+  brand:
+    name: brand assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache: true
+          cache-dependency-path: go.mod
+
+      - name: Render brand assets
+        run: go run ./tools/brandgen -out /tmp/brand
+
+      - name: Verify brand assets
+        run: test -s /tmp/brand/logo-512.png

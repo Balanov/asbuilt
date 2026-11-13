@@ -1,0 +1,2240 @@
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 0
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 1
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 2
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 3
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 4
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 5
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 6
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 7
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 8
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 9
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 10
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 11
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 12
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 13
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 14
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 15
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 16
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 17
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 18
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 19
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 20
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 20
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 21
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 21
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 22
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 22
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 23
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 23
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 24
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 24
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 25
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 25
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 26
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 26
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 27
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 27
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 28
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 0
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 29
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 1
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 30
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 2
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 31
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 3
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 32
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 4
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 33
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 5
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 34
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 6
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 35
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 7
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 36
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 8
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 37
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 9
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 38
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 10
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 39
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 11
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 40
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 12
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 41
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 13
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 42
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 14
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 43
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 15
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 44
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 16
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 45
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 17
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 46
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 18
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 47
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 19
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 48
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 20
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 49
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 21
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 50
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 22
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 51
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 23
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 52
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 24
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 53
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 25
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 54
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 26
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 55
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 0
+siblings	: 56
+core id		: 27
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 56
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 0
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 57
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 1
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 58
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 2
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 59
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 3
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 60
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 4
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 61
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 5
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 62
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 6
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 63
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 7
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 64
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 8
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 65
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 9
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 66
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 10
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 67
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 11
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 68
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 12
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 69
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 13
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 70
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 14
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 71
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 15
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 72
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 16
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 73
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 17
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 74
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 18
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 75
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 19
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 76
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 20
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 77
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 21
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 78
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 22
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 79
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 23
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 80
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 24
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 81
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 25
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 82
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 26
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 83
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 27
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 84
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 0
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 85
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 1
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 86
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 2
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 87
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 3
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 88
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 4
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 89
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 5
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 90
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 6
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 91
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 7
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 92
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 8
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 93
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 9
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 94
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 10
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 95
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 11
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 96
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 12
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 97
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 13
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 98
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 14
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 99
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 15
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 100
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 16
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 101
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 17
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 102
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 18
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 103
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 19
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 104
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 20
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 105
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 21
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 106
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 22
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 107
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 23
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 108
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 24
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 109
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 25
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 110
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 26
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
+processor	: 111
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 143
+model name	: Intel(R) Xeon(R) Platinum 8480+
+stepping	: 8
+microcode	: 0x2b000603
+cpu MHz		: 2000.000
+cache size	: 107520 KB
+physical id	: 1
+siblings	: 56
+core id		: 27
+cpu cores	: 28
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bugs		:
+bogomips	: 4000.00
+TLB size	: 0
+address sizes	: 46 bits physical, 57 bits virtual
+power management:
+
