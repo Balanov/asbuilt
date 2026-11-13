@@ -1,0 +1,57 @@
+    <template id="asbuilt-evidence-template">
+      <section id="asbuilt-evidence" class="ab-slide" aria-labelledby="asbuilt-evidence-title">
+        <div class="ab-wrap">
+          <div class="ab-head">
+            <div>
+              <p class="ab-kicker">Аудит серверов / ASBUILT</p>
+              <h2 id="asbuilt-evidence-title">33 правила.<br>3,16 мс. Потери — в гигабайтах.</h2>
+            </div>
+            <p class="ab-intro">Проверяет, что машина из себя представляет: каналы памяти, скорость PCIe-ссылок, троттлинг питания, режимы CPU. Один статичный бинарник, без root. Go · MIT · Linux / macOS / Windows.</p>
+          </div>
+          <div class="ab-grid">
+            <div class="ab-proof">
+              <div class="ab-facts">
+                <div class="ab-fact"><strong class="ab-fact-value">33</strong><span class="ab-fact-label">правила</span></div>
+                <div class="ab-fact"><strong class="ab-fact-value">3,16 мс</strong><span class="ab-fact-label">полный аудит</span></div>
+                <div class="ab-fact"><strong class="ab-fact-value">0</strong><span class="ab-fact-label">нужен root</span></div>
+              </div>
+              <a class="ab-repo" href="https://github.com/Balanov/asbuilt" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12Z"/></svg>
+                <span>Открытый код · Balanov/asbuilt</span>
+              </a>
+              <div class="ab-ghbtn"><a class="ab-star-btn" href="https://github.com/Balanov/asbuilt" target="_blank" rel="noopener" aria-label="Star Balanov/asbuilt on GitHub"><span>Star</span><strong class="ab-star-count" id="asbuilt-main-stars">0</strong></a></div>
+              <a class="ab-home" href="https://balanov.pro/asbuilt/" aria-label="Страница ASBUILT">
+                <svg viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 7v4M32 7v4M42 7v4M22 53v4M32 53v4M42 53v4"/>
+                  <path d="M7 22h4M7 32h4M7 42h4M53 22h4M53 32h4M53 42h4"/>
+                  <rect x="11" y="11" width="42" height="42" rx="7"/>
+                  <path d="M19 22h26M19 32h26"/>
+                  <path d="M19 42h26" stroke-dasharray="6 5"/>
+                </svg>
+                <span class="ab-home-text"><strong>ASBUILT</strong><small>Страница продукта →</small></span>
+              </a>
+            </div>
+            <div class="ab-bench">
+              <div class="ab-bench-top">
+                <strong class="ab-ratio">43×</strong>
+                <p class="ab-bench-copy"><strong>Полный аудит, одна машина</strong>Медиана по 20 прогонам на одном хосте.</p>
+              </div>
+              <div class="ab-rows">
+                <div class="ab-row"><span class="ab-name">asbuilt</span><span class="ab-track"><span class="ab-fill" style="--w:2.3%"></span></span><span class="ab-ms">3,16 мс</span></div>
+                <div class="ab-row"><span class="ab-name">pcicrawler</span><span class="ab-track"><span class="ab-fill" style="--w:37.2%"></span></span><span class="ab-ms">50,85 мс</span></div>
+                <div class="ab-row"><span class="ab-name">lshw</span><span class="ab-track"><span class="ab-fill" style="--w:100%"></span></span><span class="ab-ms">136,69 мс</span></div>
+              </div>
+              <p class="ab-scale-note">Срез от нуля. Подписи — фактические значения. Меньше — быстрее.</p>
+            </div>
+          </div>
+          <div class="ab-foot">
+            <p class="ab-env">Linux · AMD Ryzen 9 5950X · 32 потока · WSL2<br>Одна машина, 20 прогонов, без прогревочных замеров.</p>
+            <nav class="ab-links">
+              <a href="https://github.com/Balanov/asbuilt#what-it-checks" target="_blank" rel="noopener">Все правила ↗</a>
+              <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md" target="_blank" rel="noopener">Замеры</a>
+              <a href="https://github.com/Balanov/asbuilt/blob/main/BENCHMARKS.md" target="_blank" rel="noopener">Методика</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </template>
