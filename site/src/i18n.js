@@ -22,6 +22,7 @@ export const messages = {
     "panel.title": "asbuilt check",
     "panel.findings": "findings",
     "panel.runtime": "per audit",
+    "panel.runtimeValue": "3.16 ms",
     "panel.deps": "dependencies",
 
     "check.kicker": "Link check",
@@ -35,6 +36,7 @@ export const messages = {
     "check.negotiatedSub": "what the link ended up at",
     "check.verdictKicker": "Verdict",
     "check.verdict": "Link below its capability",
+    "check.impactValue": "−50.0%",
     "check.impact": "of link bandwidth · 31.5 of 63.0 GB/s per direction",
     "check.copy": "The operating system says nothing: the link is up, the device works, and the cluster runs at half the speed on the invoice.",
 
@@ -92,6 +94,7 @@ export const messages = {
     "panel.title": "asbuilt check",
     "panel.findings": "находок",
     "panel.runtime": "на аудит",
+    "panel.runtimeValue": "3,16 мс",
     "panel.deps": "зависимостей",
 
     "check.kicker": "Проверка ссылки",
@@ -105,6 +108,7 @@ export const messages = {
     "check.negotiatedSub": "что получилось в счёте",
     "check.verdictKicker": "Вердикт",
     "check.verdict": "Ссылка ниже возможностей",
+    "check.impactValue": "−50,0%",
     "check.impact": "пропускной способности линка · 31,5 из 63,0 ГБ/с",
     "check.copy": "ОС об этом не сообщает: ссылка поднята, устройство работает, а кластер вдвое медленнее, чем в счёте.",
 
