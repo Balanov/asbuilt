@@ -6,6 +6,7 @@
 //
 //   node scripts/build-paritet.mjs
 process.env.ASBUILT_THEME = "draft";
+process.env.ASBUILT_PARITET = "1";
 
 const { build } = await import("vite");
 

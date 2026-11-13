@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="en" data-theme="night" data-build="">
+<html lang="en" data-theme="draft" data-build="">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="asbuilt reads a server the way an inspector reads a drawing: what it actually is, what is misconfigured, and how much performance it costs. One static binary, no root, no dependencies, MIT.">
+  <meta name="description" content="asbuilt audits a server: memory channels, PCIe link speed, power throttling, CPU modes. One static binary, no root, no dependencies. The measured performance loss of every finding.">
   <meta name="theme-color" content="#0d1117">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="asbuilt — What the server actually is">
-  <meta property="og:description" content="The as-built truth of a server: hardware truth, 33 rules, measured performance loss. One static binary, no root, MIT.">
+  <meta property="og:title" content="asbuilt — the as-built truth of a server">
+  <meta property="og:description" content="33 rules, 3.16 ms per full audit, no root. Every finding priced in lost bandwidth.">
   <meta property="og:url" content="https://balanov.pro/asbuilt/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <script>document.documentElement.classList.add("js");</script>
-  <title>asbuilt — What the server actually is</title>
-  <script type="module" crossorigin src="./assets/index-C_nXUGTB.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-vL6o9Pwk.css">
+  <title>asbuilt — the as-built truth of a server</title>
+  <script type="module" crossorigin src="./assets/index-BM-yFnGi.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-vPFIEmYI.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="asbuilt home">
-      <img src="./assets/logo.svg" alt="" width="34" height="34">
+      <img src="./assets/logo.svg" alt="" width="32" height="32">
       <span>ASBUILT</span>
       <span class="brand-parent">
         <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="3.2"/><circle cx="24" cy="8" r="3.2" fill="currentColor"/><circle cx="24" cy="24" r="5.4" fill="var(--signal)"/></svg>
@@ -27,41 +27,47 @@
       </span>
     </a>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#check" data-i18n="nav.check">The three-way check</a>
-      <a href="#rules" data-i18n="nav.rules">Rules</a>
-      <a href="#benchmarks" data-i18n="nav.benchmarks">Benchmarks</a>
-      <a href="#install" data-i18n="nav.install">Install</a>
+      <a href="#check" data-i18n="nav.check">Проверка</a>
+      <a href="#numbers" data-i18n="nav.numbers">Цифры</a>
+      <a href="#rules" data-i18n="nav.rules">Правила</a>
+      <a href="#usage" data-i18n="nav.usage">Запуск</a>
     </nav>
     <div class="header-actions">
+      <div class="theme-switch" role="group" aria-label="Theme">
+        <button type="button" data-theme-set="draft" aria-pressed="false" title="Light">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <button type="button" data-theme-set="night" aria-pressed="false" title="Dark">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M20.2 14.6A8.6 8.6 0 0 1 9.4 3.8a8.6 8.6 0 1 0 10.8 10.8Z" fill="currentColor"/></svg>
+        </button>
+      </div>
       <a class="github-icon" href="https://github.com/Balanov/asbuilt" aria-label="asbuilt on GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6C3.4 18.1 2.6 17.7 2.6 17.7c-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v5.1c0 1.6 1.2 2.6 2.8 2.6 2.7 0 4.9-1.4 6.2-3.3 1.2-1.7 1.8-3.9 1.8-6.7 0-2.1-.7-4-1.8-5.3 1.9-.2 3.9.9 3.9.9 3.5-3.7 8.5-3.7 8.5 0 0 .8.3 1.9.9 2.6-1.2.1-2.4-.6-3.6-1.6-.1-1.1-.6-2.1-1.2-3.1-.1-.4-.2-.8-.3-1.2 3.2-1.1 6.8.3 6.8 4.2 0 1.7-.5 3.3-1.4 4.6 1 .1 2.1.3 3.2.5v3.2c0 2.1-.7 3.8-1.9 5 .9.5 2 .8 3.1.8 3.2 0 5.9-3.3 5.9-6.6 0-.4-.1-.8-.1-1.2z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12Z"/></svg>
       </a>
       <div class="language" aria-label="Language">
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="ru" aria-pressed="false">RU</button>
       </div>
-      <a class="header-download" href="https://github.com/Balanov/asbuilt/releases/latest" data-i18n="nav.download">Download</a>
+      <a class="header-download" href="https://github.com/Balanov/asbuilt/releases/latest" data-i18n="nav.download">Скачать</a>
     </div>
   </header>
 
   <main>
     <section class="hero" id="top">
       <div class="hero-copy">
-        <div class="pill"><span></span><span data-i18n="hero.pill">Open source · MIT · 3.35 MB · zero dependencies</span></div>
-        <h1 data-i18n="hero.title">What the server<br>actually is.</h1>
-        <p class="hero-lead" data-i18n="hero.lead">A machine can be built from parts that are individually fine and collectively wrong. asbuilt reads it the way an inspector reads a drawing, then tells you what is misconfigured and exactly how much performance it costs.</p>
+        <div class="pill"><span></span><span data-i18n="hero.pill">Открытый код · MIT · 3,35 МБ · без root</span></div>
+        <h1 data-i18n="hero.title">Фактическая<br>конфигурация сервера.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">asbuilt читает состояние машины: заполненность каналов памяти, скорость PCIe-ссылок, троттлинг питания, режимы CPU. Каждое расхождение с ожиданием считается в потерянной пропускной способности.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="https://github.com/Balanov/asbuilt/releases/latest">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 17v3h14v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span data-i18n="hero.download">Download asbuilt</span>
+            <span data-i18n="hero.download">Скачать asbuilt</span>
           </a>
-          <a class="button button-secondary" href="#check" data-i18n="hero.how">See the check</a>
+          <a class="button button-secondary" href="#numbers" data-i18n="hero.numbers">Цифры</a>
         </div>
-        <div class="hero-meta">
-          <span data-i18n="hero.meta">v0.1.0 · Linux, macOS, Windows · static binary · works without root</span>
-        </div>
-        <a class="repo-stats" href="https://github.com/Balanov/asbuilt" aria-label="asbuilt GitHub repository">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6C3.4 18.1 2.6 17.7 2.6 17.7c-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v5.1c0 1.6 1.2 2.6 2.8 2.6 2.7 0 4.9-1.4 6.2-3.3 1.2-1.7 1.8-3.9 1.8-6.7 0-2.1-.7-4-1.8-5.3 1.9-.2 3.9.9 3.9.9 3.5-3.7 8.5-3.7 8.5 0 0 .8.3 1.9.9 2.6-1.2.1-2.4-.6-3.6-1.6-.1-1.1-.6-2.1-1.2-3.1-.1-.4-.2-.8-.3-1.2 3.2-1.1 6.8.3 6.8 4.2 0 1.7-.5 3.3-1.4 4.6 1 .1 2.1.3 3.2.5v3.2c0 2.1-.7 3.8-1.9 5 .9.5 2 .8 3.1.8 3.2 0 5.9-3.3 5.9-6.6 0-.4-.1-.8-.1-1.2z"/></svg>
+        <div class="hero-meta"><span data-i18n="hero.meta">v0.1.0 · Linux, macOS, Windows · статичный бинарник · 3,16 мс на полный аудит</span></div>
+        <a class="repo-stats" href="https://github.com/Balanov/asbuilt" aria-label="asbuilt on GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12Z"/></svg>
           <span>Balanov/asbuilt</span>
           <strong>★ <span id="gh-stars">—</span></strong>
           <strong>⑂ <span id="gh-forks">—</span></strong>
@@ -86,18 +92,16 @@
                 <path class="board-trace-dev" d="M96 114h128"/>
                 <path d="M96 140h128"/>
               </g>
-              <g class="board-marks">
-                <circle class="mark mark-dev" cx="224" cy="114" r="5"/>
-              </g>
+              <g class="board-marks"><circle class="mark mark-dev" cx="224" cy="114" r="5"/></g>
               <rect class="board-scan" x="74" y="26" width="172" height="26" rx="6"/>
             </svg>
           </div>
-          <pre class="terminal" id="terminal" aria-live="off"></pre>
+          <pre class="terminal" id="terminal"></pre>
         </div>
         <div class="panel-foot">
-          <span class="panel-foot-item"><b id="panel-findings">7</b> <span data-i18n="panel.findings">findings</span></span>
-          <span class="panel-foot-item"><b>2.96 ms</b> <span data-i18n="panel.runtime">per audit</span></span>
-          <span class="panel-foot-item"><b>0</b> <span data-i18n="panel.deps">dependencies</span></span>
+          <span class="panel-foot-item"><b>7</b> <span data-i18n="panel.findings">находок</span></span>
+          <span class="panel-foot-item"><b>3,16 мс</b> <span data-i18n="panel.runtime">на аудит</span></span>
+          <span class="panel-foot-item"><b>0</b> <span data-i18n="panel.deps">зависимостей</span></span>
         </div>
       </div>
     </section>
@@ -105,93 +109,71 @@
     <section class="section" id="check">
       <div class="section-head">
         <div>
-          <p class="kicker" data-i18n="check.kicker">The check nobody else does</p>
-          <h2 data-i18n="check.title">Three numbers,<br>not two.</h2>
+          <p class="kicker" data-i18n="check.kicker">Проверка ссылки</p>
+          <h2 data-i18n="check.title">Три числа,<br>а не два.</h2>
         </div>
-        <p class="section-body" data-i18n="check.body">lspci compares a device with its own capability. That misses the case where the board or the firmware capped the slot, and it flags the case where a device misreports itself. asbuilt reads three numbers and compares all of them.</p>
+        <p class="section-body" data-i18n="check.body">lspci сравнивает устройство с его собственными возможностями. Там, где слот ограничила плата или прошивка, он молчит. asbuilt читает capability устройства, лимит порта выше по дереву и фактически выторгованное — и сравнивает все три.</p>
       </div>
 
       <div class="linkcheck">
         <div class="link-rows">
           <div class="link-row" data-row="capability">
-            <div class="link-label"><span class="link-index">01</span><span data-i18n="check.capability">Endpoint capability</span></div>
+            <div class="link-label"><span class="link-index">01</span><span data-i18n="check.capability">Возможности устройства</span></div>
             <div class="link-track"><span class="link-fill" style="--w:100%"></span></div>
             <div class="link-value">Gen5 x16</div>
           </div>
           <div class="link-row" data-row="port">
-            <div class="link-label"><span class="link-index">02</span><span data-i18n="check.port">Upstream port limit</span></div>
+            <div class="link-label"><span class="link-index">02</span><span data-i18n="check.port">Лимит порта выше</span></div>
             <div class="link-track"><span class="link-fill" style="--w:100%"></span></div>
             <div class="link-value">Gen5 x16</div>
           </div>
           <div class="link-row is-dev" data-row="negotiated">
-            <div class="link-label"><span class="link-index">03</span><span data-i18n="check.negotiated">Negotiated</span></div>
+            <div class="link-label"><span class="link-index">03</span><span data-i18n="check.negotiated">Выторговано</span></div>
             <div class="link-track"><span class="link-fill link-fill-dev" style="--w:50%"></span></div>
             <div class="link-value">Gen4 x16</div>
           </div>
         </div>
         <div class="link-verdict">
-          <p class="verdict-kicker" data-i18n="check.verdictKicker">Verdict</p>
-          <p class="verdict-value"><span data-i18n="check.verdict">Link running at half its capability</span></p>
-          <p class="verdict-impact"><strong>−50.0%</strong> <span data-i18n="check.impact">of link bandwidth · 31.5 of 63.0 GB/s per direction</span></p>
-          <p class="verdict-copy" data-i18n="check.copy">The endpoint supports Gen5 x16, the port allows Gen5 x16, and the negotiated link is Gen4 x16. Nothing in the operating system reports this. The link is up, the device works, and the cluster is quietly half as fast as the invoice says it should be.</p>
-          <div class="verdict-actions">
-            <a class="button button-primary" href="https://github.com/Balanov/asbuilt#what-it-checks" data-i18n="check.more">All 33 rules</a>
-            <a class="button button-secondary" href="https://github.com/Balanov/asbuilt/blob/main/RESEARCH.md" data-i18n="check.research">Why this tool exists</a>
-          </div>
+          <p class="verdict-kicker" data-i18n="check.verdictKicker">Вердикт</p>
+          <p class="verdict-value" data-i18n="check.verdict">Ссылка ниже возможностей</p>
+          <p class="verdict-impact"><strong>−50,0%</strong> <span data-i18n="check.impact">пропускной способности линка · 31,5 из 63,0 ГБ/с</span></p>
+          <p class="verdict-copy" data-i18n="check.copy">ОС об этом не сообщает: ссылка поднята, устройство работает, а кластер вдвое медленнее, чем в счёте.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="rules">
+    <section class="section" id="numbers">
       <div class="section-head">
         <div>
-          <p class="kicker" data-i18n="rules.kicker">33 rules</p>
-          <h2 data-i18n="rules.title">Every finding<br>carries its evidence.</h2>
+          <p class="kicker" data-i18n="bench.kicker">Замеры</p>
+          <h2 data-i18n="bench.title">3,16 мс<br>против 137 мс.</h2>
         </div>
-        <p class="section-body" data-i18n="rules.body">A rule is a judgement about a machine, not a fact about it. Each one ships with the measurements it used, the source that justifies it, and the remedy. Findings that cannot be quantified say so instead of inventing a number.</p>
+        <p class="section-body" data-i18n="bench.body">Полный аудит одной машины: 112 потоков, 8 каналов памяти, один деградировавший линк. 20 прогонов, один хост, одинаковые команды.</p>
       </div>
 
-      <div class="families" id="families"></div>
-
-      <div class="example">
-        <div class="example-head">
-          <span data-i18n="rules.exampleTitle">Real output</span>
-          <span class="example-cmd">$ asbuilt check</span>
-        </div>
-        <pre class="example-body" id="example-output"></pre>
-      </div>
-    </section>
-
-    <section class="section" id="benchmarks">
-      <div class="section-head">
-        <div>
-          <p class="kicker" data-i18n="bench.kicker">Measured, not asserted</p>
-          <h2 data-i18n="bench.title">One audit,<br>every angle.</h2>
-        </div>
-        <p class="section-body" data-i18n="bench.body">The collectors are not the product, they are a commodity. What matters is what happens after the facts are collected. Here is how the same job compares across the tools that do it.</p>
-      </div>
       <div class="bench-headline">
         <div class="bench-stat">
           <p class="bench-stat-value" id="bench-ratio">43×</p>
-          <p class="bench-stat-label" id="bench-ratio-label">faster than lshw</p>
+          <p class="bench-stat-label" id="bench-ratio-label">быстрее lshw</p>
           <p class="bench-stat-copy" id="bench-ratio-copy"></p>
         </div>
         <div class="bench-stat">
-          <p class="bench-stat-value" id="bench-uniq">the only one</p>
-          <p class="bench-stat-label" id="bench-uniq-label">that runs unprivileged</p>
+          <p class="bench-stat-value" id="bench-uniq">0</p>
+          <p class="bench-stat-label" id="bench-uniq-label">нужен root</p>
           <p class="bench-stat-copy" id="bench-uniq-copy"></p>
         </div>
       </div>
+
       <div class="table-wrap">
         <table id="bench-table">
           <thead>
             <tr>
-              <th data-i18n="bench.tool">Tool</th>
-              <th data-i18n="bench.audit">Full hardware audit</th>
+              <th data-i18n="bench.tool">Инструмент</th>
+              <th data-i18n="bench.audit">Полный аудит</th>
               <th data-i18n="bench.root">Root</th>
-              <th data-i18n="bench.verdict">Verdict</th>
-              <th data-i18n="bench.loss">Measured loss</th>
-              <th data-i18n="bench.license">License</th>
+              <th data-i18n="bench.verdict">Вердикт</th>
+              <th data-i18n="bench.loss">Потеря</th>
+              <th data-i18n="bench.license">Лицензия</th>
             </tr>
           </thead>
           <tbody id="bench-body"></tbody>
@@ -200,52 +182,42 @@
       <p class="bench-note" id="bench-note"></p>
     </section>
 
-    <section class="section" id="how">
+    <section class="section" id="rules">
       <div class="section-head">
         <div>
-          <p class="kicker" data-i18n="how.kicker">Read, judge, prove</p>
-          <h2 data-i18n="how.title">Three steps,<br>no daemon.</h2>
+          <p class="kicker" data-i18n="rules.kicker">33 правила</p>
+          <h2 data-i18n="rules.title">Пять семейств.</h2>
         </div>
-        <p class="section-body" data-i18n="how.body">asbuilt has no database, no background agent, no telemetry and no configuration file. It runs when you ask it to, prints what it found, and exits with a code your pipeline can gate on.</p>
+        <p class="section-body" data-i18n="rules.body">У каждого правила — доказательства, источник и лекарство. Находки, которые нельзя посчитать, так и помечены: число не выдумывается.</p>
       </div>
-      <div class="steps">
-        <article class="step">
-          <p class="step-index">01</p>
-          <h3 data-i18n="how.step1">Read</h3>
-          <p data-i18n="how.step1body">The kernel and the firmware. sysfs, procfs and the SMBIOS table, decoded against the DMTF specification, with every unreadable source reported instead of hidden.</p>
-          <pre class="step-code">asbuilt manifest &gt; node.json</pre>
-        </article>
-        <article class="step">
-          <p class="step-index">02</p>
-          <h3 data-i18n="how.step2">Judge</h3>
-          <p data-i18n="how.step2body">Thirty-three rules compare what the machine is against what it should be, and compute the bandwidth the configuration actually costs you.</p>
-          <pre class="step-code">asbuilt check</pre>
-        </article>
-        <article class="step">
-          <p class="step-index">03</p>
-          <h3 data-i18n="how.step3">Prove</h3>
-          <p data-i18n="how.step3body">Diff two nodes, check a node against an expected profile, and fail a provisioning pipeline when a machine is not what was ordered.</p>
-          <pre class="step-code">asbuilt --profile node.json check --fail-on critical</pre>
-        </article>
-      </div>
+      <div class="families" id="families"></div>
     </section>
 
-    <section class="section install" id="install">
-      <div class="install-inner">
+    <section class="section" id="usage">
+      <div class="section-head">
         <div>
-          <p class="kicker" data-i18n="install.kicker">One static binary</p>
-          <h2 data-i18n="install.title">Install it in<br>ten seconds.</h2>
-          <p class="section-body" data-i18n="install.body">No dependencies, no runtime, no root. Linux, macOS and Windows, x86-64 and arm64. Every release ships checksums.</p>
+          <p class="kicker" data-i18n="usage.kicker">Запуск</p>
+          <h2 data-i18n="usage.title">Три команды.</h2>
         </div>
-        <div class="install-code">
-          <div class="install-tabs" role="tablist">
-            <button type="button" class="install-tab is-active" data-tab="linux" role="tab" aria-selected="true">Linux</button>
-            <button type="button" class="install-tab" data-tab="macos" role="tab" aria-selected="false">macOS</button>
-            <button type="button" class="install-tab" data-tab="windows" role="tab" aria-selected="false">Windows</button>
-            <button type="button" class="install-tab" data-tab="go" role="tab" aria-selected="false">Go</button>
-          </div>
-          <pre class="install-body" id="install-body"></pre>
+        <p class="section-body" data-i18n="usage.body">Без демона, без базы, без телеметрии. Ответ — в stdout, код возврата — для CI.</p>
+      </div>
+      <div class="usage-grid">
+        <div class="usage-item">
+          <code>asbuilt check</code>
+          <p data-i18n="usage.one">Аудит машины: находки, потери, доказательства.</p>
         </div>
+        <div class="usage-item">
+          <code>asbuilt manifest &gt; node.json</code>
+          <p data-i18n="usage.two">Канонический манифест для сравнения нод.</p>
+        </div>
+        <div class="usage-item">
+          <code>asbuilt --profile node.json check --fail-on critical</code>
+          <p data-i18n="usage.three">Проверка по ожидаемому профилю и код возврата для pipeline.</p>
+        </div>
+      </div>
+      <div class="install-line">
+        <span data-i18n="usage.install">Установка</span>
+        <code>curl -fsSL https://raw.githubusercontent.com/Balanov/asbuilt/main/install.sh | sh</code>
       </div>
     </section>
   </main>
@@ -253,20 +225,20 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="./assets/logo.svg" alt="" width="28" height="28">
+        <img src="./assets/logo.svg" alt="" width="26" height="26">
         <div>
           <strong>asbuilt</strong>
-          <span data-i18n="footer.tagline">The as-built truth of a server</span>
+          <span data-i18n="footer.tagline">Фактическая конфигурация сервера · MIT</span>
         </div>
       </div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="https://github.com/Balanov/asbuilt" data-i18n="footer.repo">Repository</a>
-        <a href="https://github.com/Balanov/asbuilt/blob/main/RESEARCH.md" data-i18n="footer.research">Research</a>
-        <a href="https://github.com/Balanov/asbuilt/blob/main/BENCHMARKS.md" data-i18n="footer.bench">Measurements</a>
+        <a href="https://github.com/Balanov/asbuilt" data-i18n="footer.repo">Репозиторий</a>
+        <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md" data-i18n="footer.bench">Замеры</a>
+        <a href="https://github.com/Balanov/asbuilt/blob/main/RESEARCH.md" data-i18n="footer.research">Исследование</a>
         <a class="footer-parent" href="https://paritet.dev/">
           <span data-i18n="footer.parentBy">by</span>
           <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="3.2"/><circle cx="24" cy="8" r="3.2" fill="currentColor"/><circle cx="24" cy="24" r="5.4" fill="var(--signal)"/></svg>
-          <strong>Paritet</strong>
+          <strong>PARITET</strong>
         </a>
       </nav>
     </div>

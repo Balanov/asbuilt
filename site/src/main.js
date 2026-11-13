@@ -9,7 +9,7 @@ import "@fontsource/ibm-plex-mono/cyrillic-400.css";
 import "@fontsource/ibm-plex-mono/cyrillic-500.css";
 import "./style.css";
 import { messages, familyText } from "./i18n.js";
-import { auditLines, exampleLines, families, installSnippets } from "./data.js";
+import { auditLines, families } from "./data.js";
 import { benchRows, benchNote, benchHeadline } from "./bench.js";
 
 // Mark the document as scripted before the first paint of the styles that
@@ -22,6 +22,29 @@ let language = stored || (browserLanguages.some((item) => item.toLowerCase().sta
 
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+/* ---------- theme ---------- */
+const themeButtons = document.querySelectorAll("[data-theme-set]");
+
+function applyTheme(name) {
+  document.documentElement.dataset.theme = name;
+  localStorage.setItem("asbuilt-theme", name);
+  themeButtons.forEach((button) => {
+    const active = button.dataset.themeSet === name;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", name === "draft" ? "#f2f4f6" : "#0d1117");
+}
+
+const storedTheme = localStorage.getItem("asbuilt-theme");
+applyTheme(storedTheme || document.documentElement.dataset.theme || "night");
+
+themeButtons.forEach((button) => {
+  button.addEventListener("click", () => applyTheme(button.dataset.themeSet));
+});
+
+/* ---------- language ---------- */
 function text(key) {
   return messages[language][key] ?? key;
 }
@@ -39,7 +62,6 @@ function renderLanguage() {
   });
   renderFamilies();
   renderBenchmark();
-  renderInstall();
 }
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
@@ -57,9 +79,9 @@ function renderFamilies() {
   const copy = familyText[language];
   host.innerHTML = families
     .map((family) => {
-      const rules = copy[family.id]?.rules ?? family.rules;
+      const rules = copy[family.id]?.rules ?? [];
       return `<article class="family reveal">
-        <div class="family-head"><span class="family-name">${copy[family.id]?.name ?? family.name}</span><span class="family-count">${family.count}</span></div>
+        <div class="family-head"><span class="family-name">${copy[family.id]?.name ?? family.id}</span><span class="family-count">${family.count}</span></div>
         <ul class="family-list">${rules.map((rule) => `<li>${rule}</li>`).join("")}</ul>
       </article>`;
     })
@@ -90,6 +112,7 @@ function renderBenchmark() {
       </tr>`;
     })
     .join("");
+
   const note = document.querySelector("#bench-note");
   if (note) note.innerHTML = benchNote[language];
 
@@ -106,27 +129,8 @@ function renderBenchmark() {
   set("#bench-uniq-copy", headline.uniqCopy);
 }
 
-/* ---------- install ---------- */
-function renderInstall() {
-  const body = document.querySelector("#install-body");
-  if (!body) return;
-  const active = document.querySelector(".install-tab.is-active");
-  body.textContent = installSnippets[active?.dataset.tab ?? "linux"];
-}
-
-document.querySelectorAll(".install-tab").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".install-tab").forEach((other) => {
-      other.classList.toggle("is-active", other === button);
-      other.setAttribute("aria-selected", String(other === button));
-    });
-    renderInstall();
-  });
-});
-
 /* ---------- terminal demo ---------- */
 const terminal = document.querySelector("#terminal");
-let demoTimer = null;
 
 function paintLine(line) {
   const span = document.createElement("span");
@@ -142,7 +146,7 @@ function runDemo() {
 
   const step = () => {
     if (index >= auditLines.length) {
-      demoTimer = window.setTimeout(() => {
+      window.setTimeout(() => {
         index = 0;
         terminal.innerHTML = "";
         step();
@@ -158,7 +162,7 @@ function runDemo() {
     }
     index += 1;
     const delay = line.text.startsWith("$") ? 260 : line.text === "" ? 90 : 46;
-    demoTimer = window.setTimeout(step, reduced ? 0 : delay);
+    window.setTimeout(step, reduced ? 0 : delay);
   };
 
   step();
@@ -170,14 +174,6 @@ if (reduced) {
   }
 } else {
   runDemo();
-}
-
-/* ---------- example output ---------- */
-const example = document.querySelector("#example-output");
-if (example) {
-  example.innerHTML = exampleLines
-    .map((line) => (line.text === "" ? "\n" : `<span class="${line.cls}">${line.text}</span>`))
-    .join("\n");
 }
 
 /* ---------- reveal ---------- */
@@ -200,7 +196,7 @@ function observeReveals(root = document) {
   targets.forEach((target) => observer.observe(target));
 }
 
-document.querySelectorAll(".section-head, .example, .table-wrap, .steps, .install-inner, .linkcheck").forEach((element) => {
+document.querySelectorAll(".section-head, .linkcheck, .table-wrap, .bench-headline, .usage-grid, .install-line").forEach((element) => {
   element.classList.add("reveal");
 });
 

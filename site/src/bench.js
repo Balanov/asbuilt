@@ -1,10 +1,10 @@
 // Benchmark rows for the landing page.
 //
-// Every runtime figure here was measured on the same machine with the
-// harness in bench/measure.py: 20 timed runs after 2 discarded warm-ups,
-// binary and fixture on the native Linux filesystem, stdout to DEVNULL.
-// Rows that could not be run in that environment carry the reason instead
-// of an estimate. The full dataset is in bench/COMPETITORS.md.
+// Every runtime figure was measured on the same machine with the harness in
+// bench/measure.py: 20 timed runs after 2 discarded warm-ups, binary and
+// fixture on the native Linux filesystem, stdout to DEVNULL. Rows that could
+// not be run in that environment carry the reason instead of an estimate.
+// The full dataset is in bench/COMPETITORS.md.
 
 export const benchRows = [
   {
@@ -55,8 +55,8 @@ export const benchRows = [
   },
   {
     tool: "dmidecode",
-    note: "C, the only SMBIOS dump here, but no verdict",
-    time: "0.69 ms",
+    note: "C, SMBIOS dump, no verdict",
+    time: "0.69 ms*",
     root: "yes",
     verdict: "collect",
     loss: null,
@@ -86,22 +86,22 @@ export const benchHeadline = {
   en: {
     ratio: "43×",
     ratioLabel: "faster than lshw",
-    ratioCopy: "A full audit of a 112-thread machine with eight memory channels and a degraded PCIe link, in one process, without root.",
-    uniq: "the only one",
-    uniqLabel: "that runs unprivileged",
-    uniqCopy: "Verified byte-identical output as user nobody. The degraded-link verdict comes from world-readable sysfs, so it works in a container.",
+    ratioCopy: "Full audit of a 112-thread machine: 3.16 ms against 136.69 ms. 20 runs, one host.",
+    uniq: "0",
+    uniqLabel: "root required",
+    uniqCopy: "The link verdict is read from world-readable sysfs. Verified as user nobody: byte-identical output.",
   },
   ru: {
     ratio: "43×",
     ratioLabel: "быстрее lshw",
-    ratioCopy: "Полный аудит машины на 112 потоков, восемь каналов памяти и деградировавшая PCIe-ссылка — одним процессом, без root.",
-    uniq: "единственный",
-    uniqLabel: "кто работает без прав",
-    uniqCopy: "Проверено: вывод побайтово совпадает под пользователем nobody. Вердикт по ссылке берётся из world-readable sysfs, поэтому работает в контейнере.",
+    ratioCopy: "Полный аудит машины на 112 потоков: 3,16 мс против 136,69 мс. 20 прогонов, один хост.",
+    uniq: "0",
+    uniqLabel: "нужен root",
+    uniqCopy: "Вердикт по ссылке читается из world-readable sysfs. Проверено под пользователем nobody: вывод побайтово тот же.",
   },
 };
 
 export const benchNote = {
-  en: 'Runtime figures are the mean of 20 runs of the same commands on one machine, with the binary and the fixture on the native Linux filesystem: 3.16 ms for asbuilt against 137 ms for lshw, measured with <code>bench/measure.py</code> in the repository. Rows marked "—" were not run here, and say why: PerfSpect needs an Intel PMU and root, SAT hwmatch needs an HPE Cray EX stack. Every licence and scope claim links to the project it comes from. The full dataset, including the caveats, is in <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md">bench/COMPETITORS.md</a>.',
-  ru: 'Время — среднее из 20 прогонов одних и тех же команд на одной машине, бинарник и фикстура на нативной файловой системе Linux: 3,16 мс у asbuilt против 137 мс у lshw, замер скриптом <code>bench/measure.py</code> из репозитория. Строки с «—» здесь не запускались, и рядом указано почему: PerfSpect нужен Intel PMU и root, SAT hwmatch — стек HPE Cray EX. Каждое утверждение о лицензии и области работы ссылается на исходный проект. Полный набор данных вместе с оговорками — в <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md">bench/COMPETITORS.md</a>.',
+  en: 'Runtime figures are the mean of 20 runs of the same commands on one host, binary and fixture on the native Linux filesystem: <code>bench/measure.py</code> in the repository. Rows marked "—" were not run here, and say why: PerfSpect needs an Intel PMU and root, SAT hwmatch needs an HPE Cray EX stack. * dmidecode has no SMBIOS table on this host, so its timing measures the absence of one. Full dataset with the caveats: <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md">bench/COMPETITORS.md</a>.',
+  ru: 'Время — среднее из 20 прогонов одних и тех же команд на одном хосте, бинарник и фикстура на нативной файловой системе Linux: <code>bench/measure.py</code> из репозитория. Строки с «—» здесь не запускались, и рядом указано почему: PerfSpect нужен Intel PMU и root, SAT hwmatch — стек HPE Cray EX. * У dmidecode на этом хосте нет таблицы SMBIOS, поэтому его замер меряет отсутствие таблицы. Полный набор данных с оговорками: <a href="https://github.com/Balanov/asbuilt/blob/main/bench/COMPETITORS.md">bench/COMPETITORS.md</a>.',
 };
