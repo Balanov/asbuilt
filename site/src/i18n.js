@@ -14,7 +14,7 @@ export const messages = {
 
     "hero.pill": "Open source · MIT · 3.35 MB · no root",
     "hero.title": "The server as built.",
-    "hero.lead": "asbuilt reads the state of the machine: how the memory channels are populated, how fast the PCIe links negotiated, whether the package throttled, what the CPU is doing. Every deviation from the expected configuration is priced in lost bandwidth.",
+    "hero.lead": "asbuilt checks that the server delivers the speed it was bought for. Memory, PCIe, power, CPU — and it prices every deviation in the gigabytes per second it costs.",
     "hero.download": "Download asbuilt",
     "hero.numbers": "Numbers",
     "hero.meta": "v0.1.0 · Linux, macOS, Windows · static binary · 3.16 ms for a full audit",
@@ -26,10 +26,13 @@ export const messages = {
 
     "check.kicker": "Link check",
     "check.title": "Three numbers, not two.",
-    "check.body": "lspci compares a device with its own capability. It stays silent where the board or the firmware capped the slot. asbuilt reads the endpoint capability, the limit of the port above it and what was actually negotiated, and compares all three.",
+    "check.body": "Tools usually compare a device with its own capability. Where the board or the firmware capped the slot, the difference stays invisible. asbuilt reads three numbers — what the device can do, what the port above allows, what was actually negotiated — and compares all three.",
     "check.capability": "Endpoint capability",
+    "check.capabilitySub": "what the card can do",
     "check.port": "Upstream port limit",
+    "check.portSub": "the limit set by the board",
     "check.negotiated": "Negotiated",
+    "check.negotiatedSub": "what the link ended up at",
     "check.verdictKicker": "Verdict",
     "check.verdict": "Link below its capability",
     "check.impact": "of link bandwidth · 31.5 of 63.0 GB/s per direction",
@@ -37,7 +40,7 @@ export const messages = {
 
     "bench.kicker": "Measurements",
     "bench.title": "3.16 ms against 137 ms.",
-    "bench.body": "A full audit of one machine: 112 threads, 8 memory channels, one degraded link. 20 runs, one host, the same commands.",
+    "bench.body": "A full audit of one machine: 112 threads, 8 memory channels, one degraded link. 20 runs on one host, the same commands every time.",
     "bench.tool": "Tool",
     "bench.audit": "Full audit",
     "bench.root": "Root",
@@ -53,15 +56,15 @@ export const messages = {
     "bench.none": "not computed",
 
     "rules.kicker": "33 rules",
-    "rules.title": "Five families.",
-    "rules.body": "Every rule carries the measurements it used, the source that justifies it and the remedy. Findings that cannot be priced say so: no number is invented.",
+    "rules.title": "What it checks.",
+    "rules.body": "33 rules in five families. Each one carries the measurement it used, the source behind it and the remedy. When it cannot be priced, it says so: no number is invented.",
 
     "usage.kicker": "Run",
     "usage.title": "Three commands.",
     "usage.body": "No daemon, no database, no telemetry. The answer goes to stdout, the exit code goes to CI.",
     "usage.one": "Audit the machine: findings, losses, evidence.",
-    "usage.two": "The canonical manifest, for comparing nodes.",
-    "usage.three": "Check against an expected profile and fail a pipeline.",
+    "usage.two": "The canonical manifest of a node, for comparing machines.",
+    "usage.three": "Check against an expected profile, and fail a pipeline.",
     "usage.install": "Install",
 
     "footer.tagline": "The server as built · MIT",
@@ -81,7 +84,7 @@ export const messages = {
 
     "hero.pill": "Открытый код · MIT · 3,35 МБ · без root",
     "hero.title": "Фактическая конфигурация сервера.",
-    "hero.lead": "asbuilt читает состояние машины: заполненность каналов памяти, скорость PCIe-ссылок, троттлинг питания, режимы CPU. Каждое расхождение с ожиданием считается в потерянной пропускной способности.",
+    "hero.lead": "asbuilt проверяет, что сервер выдаёт заявленную скорость. Память, PCIe, питание, CPU — и считает, сколько гигабайт в секунду пропадает на каждом отклонении.",
     "hero.download": "Скачать asbuilt",
     "hero.numbers": "Цифры",
     "hero.meta": "v0.1.0 · Linux, macOS, Windows · статичный бинарник · 3,16 мс на полный аудит",
@@ -93,10 +96,13 @@ export const messages = {
 
     "check.kicker": "Проверка ссылки",
     "check.title": "Три числа, а не два.",
-    "check.body": "lspci сравнивает устройство с его собственными возможностями. Там, где слот ограничила плата или прошивка, он молчит. asbuilt читает capability устройства, лимит порта выше по дереву и фактически выторгованное — и сравнивает все три.",
+    "check.body": "Обычно инструмент сравнивает устройство с его собственными возможностями. Там, где предел задала плата или прошивка, разница не видна. asbuilt берёт три числа — что умеет устройство, какой предел у порта сверху и что выторговали на самом деле — и сравнивает все три.",
     "check.capability": "Возможности устройства",
+    "check.capabilitySub": "что умеет карта",
     "check.port": "Лимит порта выше",
+    "check.portSub": "предел, заданный платой",
     "check.negotiated": "Выторговано",
+    "check.negotiatedSub": "что получилось в счёте",
     "check.verdictKicker": "Вердикт",
     "check.verdict": "Ссылка ниже возможностей",
     "check.impact": "пропускной способности линка · 31,5 из 63,0 ГБ/с",
@@ -104,7 +110,7 @@ export const messages = {
 
     "bench.kicker": "Замеры",
     "bench.title": "3,16 мс против 137 мс.",
-    "bench.body": "Полный аудит одной машины: 112 потоков, 8 каналов памяти, один деградировавший линк. 20 прогонов, один хост, одинаковые команды.",
+    "bench.body": "Полный аудит одной машины: 112 потоков, 8 каналов памяти, один деградировавший линк. 20 прогонов на одном хосте, одинаковые команды.",
     "bench.tool": "Инструмент",
     "bench.audit": "Полный аудит",
     "bench.root": "Root",
@@ -120,15 +126,15 @@ export const messages = {
     "bench.none": "не считается",
 
     "rules.kicker": "33 правила",
-    "rules.title": "Пять семейств.",
-    "rules.body": "У каждого правила — доказательства, источник и лекарство. Находки, которые нельзя посчитать, так и помечены: число не выдумывается.",
+    "rules.title": "Что проверяем.",
+    "rules.body": "33 правила в пяти семействах. У каждого — доказательство, источник и что делать. Если посчитать нельзя, так и написано: число не выдумывается.",
 
     "usage.kicker": "Запуск",
     "usage.title": "Три команды.",
-    "usage.body": "Без демона, без базы, без телеметрии. Ответ — в stdout, код возврата — для CI.",
+    "usage.body": "Без демона, без базы, без телеметрии. Ответ — в stdout, код возврата — в CI.",
     "usage.one": "Аудит машины: находки, потери, доказательства.",
-    "usage.two": "Канонический манифест, для сравнения нод.",
-    "usage.three": "Проверка по ожидаемому профилю и код возврата для pipeline.",
+    "usage.two": "Канонический манифест ноды — для сравнения машин.",
+    "usage.three": "Проверка по ожидаемому профилю и код возврата для CI.",
     "usage.install": "Установка",
 
     "footer.tagline": "Фактическая конфигурация сервера · MIT",
@@ -143,6 +149,7 @@ export const familyText = {
   en: {
     pcie: {
       name: "PCIe",
+      sub: "the speed of the links between devices",
       rules: [
         "Link below endpoint capability",
         "Endpoint capability above the port limit",
@@ -152,6 +159,7 @@ export const familyText = {
     },
     memory: {
       name: "Memory",
+      sub: "channels and modules",
       rules: [
         "Below the rating of the modules",
         "Mixed rated speeds in a channel",
@@ -163,6 +171,7 @@ export const familyText = {
     },
     numa: {
       name: "NUMA",
+      sub: "nodes and the memory behind them",
       rules: [
         "One node on a multi-socket machine",
         "Nodes with different memory sizes",
@@ -170,6 +179,7 @@ export const familyText = {
     },
     cpu: {
       name: "CPU",
+      sub: "how the processor is allowed to run",
       rules: [
         "Turbo closed",
         "Governor is not performance",
@@ -179,6 +189,7 @@ export const familyText = {
     },
     firmware: {
       name: "Firmware and OS",
+      sub: "settings of the firmware and the kernel",
       rules: [
         "Transparent huge pages always on",
         "Automatic NUMA balancing",
@@ -192,6 +203,7 @@ export const familyText = {
   ru: {
     pcie: {
       name: "PCIe",
+      sub: "скорость линков между устройствами",
       rules: [
         "Ссылка ниже возможностей устройства",
         "Возможности выше лимита порта",
@@ -201,6 +213,7 @@ export const familyText = {
     },
     memory: {
       name: "Память",
+      sub: "каналы и модули",
       rules: [
         "Работа ниже рейтинга модулей",
         "Разные рейтинги скорости в канале",
@@ -212,6 +225,7 @@ export const familyText = {
     },
     numa: {
       name: "NUMA",
+      sub: "узлы и память за ними",
       rules: [
         "Один узел на многосокетной машине",
         "Узлы с разным объёмом памяти",
@@ -219,6 +233,7 @@ export const familyText = {
     },
     cpu: {
       name: "CPU",
+      sub: "как процессору разрешено работать",
       rules: [
         "Turbo закрыт",
         "Governor не производительный",
@@ -228,6 +243,7 @@ export const familyText = {
     },
     firmware: {
       name: "Прошивка и ОС",
+      sub: "настройки прошивки и ядра",
       rules: [
         "Transparent huge pages всегда включены",
         "Автобалансировка NUMA",

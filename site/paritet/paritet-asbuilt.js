@@ -126,6 +126,7 @@
 
   function formatGap(value) {
     if (!Number.isFinite(value) || value <= 0) return "";
+    if (value >= 100) return `×${value.toFixed(1).replace(".", ",")}`;
     if (value >= 10) return `×${Math.round(value)}`;
     return `×${value.toFixed(1).replace(".", ",")}`;
   }

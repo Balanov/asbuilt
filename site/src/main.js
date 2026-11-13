@@ -80,8 +80,10 @@ function renderFamilies() {
   host.innerHTML = families
     .map((family) => {
       const rules = copy[family.id]?.rules ?? [];
+      const sub = copy[family.id]?.sub ? `<p class="family-sub">${copy[family.id].sub}</p>` : "";
       return `<article class="family reveal">
         <div class="family-head"><span class="family-name">${copy[family.id]?.name ?? family.id}</span><span class="family-count">${family.count}</span></div>
+        ${sub}
         <ul class="family-list">${rules.map((rule) => `<li>${rule}</li>`).join("")}</ul>
       </article>`;
     })
@@ -90,6 +92,9 @@ function renderFamilies() {
 }
 
 /* ---------- benchmark table ---------- */
+// The scale of the little bars: the slowest tool that was measured here.
+const BENCH_SCALE = 136.69;
+
 function renderBenchmark() {
   const body = document.querySelector("#bench-body");
   if (!body) return;
@@ -102,9 +107,10 @@ function renderBenchmark() {
     .map((row) => {
       const loss = row.loss ? `<span class="cell-loss">${row.loss}</span>` : `<span class="cell-loss is-none">${text("bench.none")}</span>`;
       const verdict = row.verdict === "full" ? text("bench.full") : row.verdict === "compare" ? text("bench.compare") : text("bench.collect");
+      const bar = row.ms ? `<span class="cell-bar"><i style="width:${((row.ms / BENCH_SCALE) * 100).toFixed(2)}%"></i></span>` : "";
       return `<tr class="${row.asbuilt ? "is-asbuilt" : ""}">
         <td class="tool">${row.tool}${row.note ? `<small>${row.note}</small>` : ""}</td>
-        <td class="cell-time">${row.time}</td>
+        <td class="cell-time">${row.time}${bar}</td>
         <td>${badge(row.root)}</td>
         <td>${verdict}</td>
         <td>${loss}</td>
