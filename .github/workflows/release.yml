@@ -93,7 +93,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: asbuilt-${{ matrix.target }}
-          path: asbuilt-${{ matrix.target }}${{ matrix.ext }}
+          path: asbuilt-${{ steps.version.outputs.version }}-${{ matrix.target }}${{ matrix.ext }}
           if-no-files-found: error
           retention-days: 7
 
