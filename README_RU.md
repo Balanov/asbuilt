@@ -7,7 +7,7 @@
     <a href="#что-проверяется">Что проверяется</a> ·
     <a href="#профили">Профили</a> ·
     <a href="#манифесты-и-диффы">Манифесты</a> ·
-    <a href="#ci-в-gate">CI-ворота</a> ·
+    <a href="#ci-верота">CI-ворота</a> ·
     <a href="BENCHMARKS.md">Замеры</a> ·
     <a href="RESEARCH.md">Исследование</a> ·
     <a href="README.md">English</a>
