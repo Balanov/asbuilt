@@ -186,6 +186,56 @@
     }
   }
 
+  /* ---------- наш блок: тот же язык, что у страницы ---------- */
+
+  /* Формулировки нашего блока заданы в шаблоне по-русски. На английской
+     странице они переводятся здесь: словарь сайта до нашего блока не
+     добирается. */
+  const ASBUILT_TEXT_EN = {
+    "Аудит серверов / ASBUILT": "Server audit / ASBUILT",
+    "33 правила.": "33 rules.",
+    "3,16 мс. Потери — в гигабайтах.": "3.16 ms. Losses in gigabytes.",
+    "Проверяет, что машина из себя представляет: каналы памяти, скорость PCIe-ссылок, троттлинг питания, режимы CPU. Один статичный бинарник, без root. Go · MIT · Linux / macOS / Windows.":
+      "Checks what the machine actually is: memory channels, PCIe link speed, power throttling, CPU modes. One static binary, no root. Go · MIT · Linux / macOS / Windows.",
+    "правила": "rules",
+    "полный аудит": "full audit",
+    "нужен root": "root needed",
+    "Открытый код · Balanov/asbuilt": "Open source · Balanov/asbuilt",
+    "Страница продукта →": "Product page →",
+    "Полный аудит, одна машина": "Full audit, one machine",
+    "Медиана по 20 прогонам на одном хосте.": "Median of 20 runs on one host.",
+    "Шкала от нуля. Подписи — фактические значения. Меньше — быстрее.":
+      "Scale from zero. Labels are actual values. Less is faster.",
+    "Linux · AMD Ryzen 9 5950X · 32 потока · WSL2": "Linux · AMD Ryzen 9 5950X · 32 threads · WSL2",
+    "Одна машина, 20 прогонов, без прогревочных замеров.":
+      "One machine, 20 runs, no warm-up runs.",
+    "Все правила ↗": "All rules ↗",
+    "Замеры": "Measurements",
+    "Методика": "Method",
+    "Страница ASBUILT": "ASBUILT page",
+    "Следующий слайд": "Next slide",
+  };
+
+  function applyTextMap(root, map) {
+    if (!root || !map) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const node of nodes) {
+      const raw = node.nodeValue;
+      const key = raw.trim();
+      if (!key) continue;
+      const value = map[key];
+      if (!value || key === value) continue;
+      node.nodeValue = raw.replace(key, value);
+    }
+    root.querySelectorAll("[aria-label]").forEach((el) => {
+      const current = el.getAttribute("aria-label");
+      const value = map[current];
+      if (value) el.setAttribute("aria-label", value);
+    });
+  }
+
   /* ---------- блок Skein: тот же язык, что у нас ---------- */
 
   /* Блок Skein принадлежит основной странице. Его формулировки задаются
@@ -218,6 +268,18 @@
       keys: ["Страница всех проверок →", "All checks page →"],
       ru: "Страница продукта →",
       en: "Product page →",
+    },
+    {
+      keys: ["554,9×", "554.9×"],
+      ru: "554,9×",
+      en: "554.9×",
+      be: "554,9×",
+      es: "554,9×",
+      zh: "554.9×",
+      ja: "554.9×",
+      ko: "554.9×",
+      ar: "554.9×",
+      hi: "554.9×",
     },
   ];
 
@@ -383,6 +445,8 @@
     skein.classList.add("ab-slide");
     mine.classList.add("ab-slide");
 
+    if (localeOf() === "en") applyTextMap(wrapper, ASBUILT_TEXT_EN);
+
     showSlide(0);
     markAllGaps();
     return true;
@@ -403,6 +467,7 @@
     if (!anchor) return false;
 
     const section = template.content.firstElementChild.cloneNode(true);
+    if (localeOf() === "en") applyTextMap(section, ASBUILT_TEXT_EN);
     translateTree(section);
     anchor.node.insertAdjacentElement(anchor.position, section);
 
