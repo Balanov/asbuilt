@@ -75,6 +75,9 @@
 /* Who made it: the mark of PARITET in the corner of the card. */
 .pp-by { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; padding-left: 16px; color: hsl(var(--ink-3)); font: 500 10px/1 "IBM Plex Mono", monospace; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
 .pp-by svg { width: 18px; height: 18px; flex: none; color: hsl(var(--ink-2)); }
+/* The card of the site styles every svg inside it: the mark keeps its size. */
+#asbuilt-evidence .ab-home .pp-by svg,
+#skein-evidence .sk-home .pp-by svg { width: 18px; height: 18px; }
 #asbuilt-evidence .ab-home:hover .pp-by,
 #skein-evidence .sk-home:hover .pp-by { color: hsl(var(--signal)); }
 
