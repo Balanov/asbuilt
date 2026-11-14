@@ -278,6 +278,12 @@ distinction between them is the whole point of the memory rules.
 - [CHANGELOG.md](CHANGELOG.md) — what changed.
 - `asbuilt explain <rule-id>` — the rationale and the source for any rule.
 
+## Related projects
+
+- [held](https://github.com/Balanov/held) — held-out measurement for claimed AI and robot improvements.
+- [uncut](https://github.com/Balanov/uncut) — the lossless, headless coding-agent harness.
+
+
 ## License
 
 MIT. See [LICENSE](LICENSE). Fork it, change it, ship it.
