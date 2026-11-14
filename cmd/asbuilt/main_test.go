@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -34,5 +36,22 @@ func TestSplitCommand(t *testing.T) {
 				t.Errorf("rest = %v, want %v", rest, testCase.rest)
 			}
 		})
+	}
+}
+
+func TestGatherRejectsUnknownProfileFields(t *testing.T) {
+	for _, input := range []string{
+		"{\"unexpected\":true}",
+		"{\"expect\":{\"unexpected\":true}}",
+		"{\"expect\":{\"memory\":{\"configured_mts_x\":6400}}}",
+	} {
+		path := filepath.Join(t.TempDir(), "profile.json")
+		if err := os.WriteFile(path, []byte(input), 0600); err != nil {
+			t.Fatal(err)
+		}
+		_, _, err := gather(commonFlags{root: t.TempDir(), profile: path})
+		if err == nil || !strings.Contains(err.Error(), path) || !strings.Contains(err.Error(), "unknown field") {
+			t.Fatalf("expected an unknown-field error naming %s, got %v", path, err)
+		}
 	}
 }

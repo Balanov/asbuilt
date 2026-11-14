@@ -307,20 +307,19 @@ func cmdExplain(args []string) int {
 }
 
 func gather(c commonFlags) (*collect.Manifest, *profile.Profile, error) {
-	m := collect.Gather(sysfs.New(c.root))
-
 	var prof *profile.Profile
 	if c.profile != "" {
 		raw, err := os.ReadFile(c.profile)
 		if err != nil {
 			return nil, nil, fmt.Errorf("profile %s: %w", c.profile, err)
 		}
-		var p profile.Profile
-		if err := json.Unmarshal(raw, &p); err != nil {
+		p, err := profile.Parse(raw)
+		if err != nil {
 			return nil, nil, fmt.Errorf("profile %s: %w", c.profile, err)
 		}
-		prof = &p
+		prof = p
 	}
+	m := collect.Gather(sysfs.New(c.root))
 	return m, prof, nil
 }
 
