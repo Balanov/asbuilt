@@ -200,6 +200,7 @@
     "правила": "rules",
     "полный аудит": "full audit",
     "нужен root": "root needed",
+    "3,16 мс": "3.16 ms",
     "Открытый код · Balanov/asbuilt": "Open source · Balanov/asbuilt",
     "Страница продукта →": "Product page →",
     "Полный аудит, одна машина": "Full audit, one machine",
