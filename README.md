@@ -153,6 +153,8 @@ asbuilt manifest > node-014.json
 
 ## What it checks
 
+[Complete rule-id reference and evidence sources](docs/rules.md).
+
 Thirty-three rules in five families. Every rule carries the evidence it used
 and a source that justifies it, and `asbuilt explain` prints both.
 

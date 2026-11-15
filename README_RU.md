@@ -142,6 +142,8 @@ asbuilt manifest > node-014.json
 
 ## Что проверяется
 
+[Complete rule-id reference and evidence sources](docs/rules.md).
+
 Тридцать три правила в пяти семействах. У каждого правила есть доказательства,
 на которых оно основано, и источник, который его обосновывает; всё это
 печатает `asbuilt explain`.
