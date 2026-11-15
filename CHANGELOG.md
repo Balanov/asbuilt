@@ -1,3 +1,8 @@
+## 0.1.1 - 2026-11-15
+
+### Fixed
+
+- An expected profile with an unknown key is refused before any machine data is collected. The message carries the full nested path of the field, for example `expect.memory.configured_mts_x`.
 # Changelog
 
 All notable changes to this project are documented in this file.
