@@ -286,6 +286,11 @@ distinction between them is the whole point of the memory rules.
 - [uncut](https://github.com/Balanov/uncut) — the lossless, headless coding-agent harness.
 
 
+## Related
+
+- [pact](https://github.com/Balanov/pact) — a tiny contract for agent-initiated payments: quote, consent, commit, receipt, chained by digests.
+- [attest](https://github.com/Balanov/attest) — offline verifier for PACT trails: one static Go binary, standard library only.
+
 ## License
 
 MIT. See [LICENSE](LICENSE). Fork it, change it, ship it.
